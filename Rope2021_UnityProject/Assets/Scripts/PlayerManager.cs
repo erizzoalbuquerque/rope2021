@@ -51,9 +51,9 @@ public class PlayerManager : MonoBehaviour {
         isAlive = false;
 
         this.gameObject.GetComponent<MeshRenderer>().enabled = false;
-		ropeIsEnabled = this.gameObject.GetComponent<NewRope> ().enabled;
-        this.gameObject.GetComponent<NewRope>().enabled = false;
-        this.gameObject.GetComponent<NewPlayer2>().enabled = false;
+		ropeIsEnabled = this.gameObject.GetComponent<Rope> ().enabled;
+        this.gameObject.GetComponent<Rope>().enabled = false;
+        this.gameObject.GetComponent<Protagonist>().enabled = false;
         this.gameObject.GetComponent<Collider2D>().enabled = false;
 
         this.gameObject.GetComponent<Rigidbody2D>().Sleep();
@@ -64,8 +64,8 @@ public class PlayerManager : MonoBehaviour {
         isAlive = true;
 
         this.gameObject.GetComponent<MeshRenderer>().enabled = true;
-		this.gameObject.GetComponent<NewRope>().enabled = ropeIsEnabled;
-        this.gameObject.GetComponent<NewPlayer2>().enabled = true;
+		this.gameObject.GetComponent<Rope>().enabled = ropeIsEnabled;
+        this.gameObject.GetComponent<Protagonist>().enabled = true;
         this.gameObject.GetComponent<Collider2D>().enabled = true;
 
         this.gameObject.GetComponent<Rigidbody2D>().WakeUp();

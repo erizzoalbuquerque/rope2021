@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class NewRope : MonoBehaviour {
+public class Rope : MonoBehaviour {
 
     Rigidbody2D rigidBody;
     
@@ -15,7 +15,6 @@ public class NewRope : MonoBehaviour {
 	public Vector3 localAnchorPoint;
 	public Vector2 anchorPoint;
 
-	public float radius;
 	public float maxDistance = 100f;
 	public float maxSearchAngle;
 	public float angleDiscretization;
@@ -180,13 +179,13 @@ public class NewRope : MonoBehaviour {
 			Vector2 radialVersor = ((Vector2)gameObject.transform.position - anchorPoint).normalized;
 			Vector2 tangencialVersor = new Vector2(radialVersor.y,-radialVersor.x);
 
-            rigidBody.AddForce(tangencialVersor*(Vector2.Dot(inputVector,tangencialVersor))*tangentBoost);
+            rigidBody.AddForce(tangencialVersor*(Vector2.Dot(inputVector,tangencialVersor))*tangentBoost *Time.deltaTime);
 
             //Protótipo de recolhimento manual de corda
             if (Mathf.Abs(Vector2.Dot(inputVector, radialVersor)) > Mathf.Cos(Mathf.Deg2Rad * 60f)) // Se angulo entre corda e input menor que ângulo...
             {
                 //distanceJoint2d.distance += ropeDistanceChangeConst * Vector2.Dot(inputVector, radialVersor);
-                rigidBody.AddForce(radialVersor * (Vector2.Dot(inputVector, radialVersor)) * ropeDistanceChangeConst); // tentativa bem bundona para controlar melhor corda.
+                rigidBody.AddForce(radialVersor * (Vector2.Dot(inputVector, radialVersor)) * ropeDistanceChangeConst * Time.deltaTime); // tentativa bem bundona para controlar melhor corda.
             }
         }
 		
@@ -204,7 +203,7 @@ public class NewRope : MonoBehaviour {
 	{
 		Gizmos.color = Color.red;
 		Vector3 gizmoPos3D = gameObject.transform.position + new Vector3(aimingDirection.x, aimingDirection.y, 0.0f).normalized * maxDistance;
-		Gizmos.DrawSphere(gizmoPos3D , 0.5f);
+        Gizmos.DrawLine(gameObject.transform.position, gizmoPos3D);
 
         if (ropeIsActive)
         {

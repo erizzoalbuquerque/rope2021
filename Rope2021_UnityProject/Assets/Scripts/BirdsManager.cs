@@ -14,7 +14,7 @@ public class BirdsManager : MonoBehaviour {
     public float _vOuterBoundSize = 10f , _hOuterBoundSize = 10f;
     public float _vInnerBoundSize = 5f, _hInnerBoundSize = 5f;
 
-    NewPlayer2 _player;
+    Protagonist _player;
 
     List<Bird> _birds = new List<Bird>();
 
@@ -27,7 +27,7 @@ public class BirdsManager : MonoBehaviour {
         _outerBound = new Bounds(transform.position, new Vector3(_hOuterBoundSize, _vOuterBoundSize, 100f));
         _innerBound = new Bounds(transform.position, new Vector3(_hInnerBoundSize, _vInnerBoundSize, 100f));
 
-        _player = FindObjectOfType<NewPlayer2>();
+        _player = FindObjectOfType<Protagonist>();
 
         _birds.Clear();
         _birds.AddRange(GetComponentsInChildren<Bird>());

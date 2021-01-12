@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewPlayer2 : MonoBehaviour {
+public class Protagonist : MonoBehaviour {
 
 	public enum PhysicsState {ON_GROUND,ON_AIR,USING_ROPE, ON_WAll};
 
 	public PhysicsState physicsState = PhysicsState.ON_GROUND; 
 
-	public NewRope rope;
+	public Rope rope;
 
 	public float maxSpeedX, maxSpeedY;
 	public float groundAccel, airAccel;
@@ -56,7 +56,7 @@ public class NewPlayer2 : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-		rope = GetComponent<NewRope> ();
+		rope = GetComponent<Rope> ();
 
 		canStick = true;
 		sticking = false;
@@ -95,19 +95,6 @@ public class NewPlayer2 : MonoBehaviour {
 		onGround = Physics2D.IsTouchingLayers( groundCheckCol,whatIsSolid);
 		cLeft = Physics2D.IsTouchingLayers( leftCheckCol,whatIsSolid);
 		cRight = Physics2D.IsTouchingLayers( rightCheckCol,whatIsSolid);
-
-//		if (onGroundTemp == false) {
-//			ungroundedTimer += Time.deltaTime;
-//			if (ungroundedTimer >= timeForUnground) 
-//			{
-//				onGround = false;
-//			}
-//		} 
-//		else 
-//		{
-//			ungroundedTimer = 0f;
-//			onGround = true;			
-//		}
 
         //-----------CHECKING FOR STICKING CONDITIONS
         if ((cRight || cLeft))
@@ -162,14 +149,6 @@ public class NewPlayer2 : MonoBehaviour {
     }
 
 
-	void FixedUpdate()
-	{
-//		if (oldSpeed - rigidBody2d.velocity.magnitude >= maxSpeedY*0.9f) {
-//			audioSource.PlayOneShot (hitSolidClip,10f);
-//		}
-//		oldSpeed = rigidBody2d.velocity.magnitude;
-	}
-
 	void ChoosePhysicsState()
 	{		
 		if (onGround == true && rope.ropeIsActive == false) {
@@ -209,7 +188,7 @@ public class NewPlayer2 : MonoBehaviour {
         else if (currentSpeedX <= -maxSpeedX && targetSpeedX > 0)
 			currentSpeedX = Common.ApproachWeighted(targetSpeedX, currentSpeedX, groundAccel / highSpeedGroundDivider );
         else
-            currentSpeedX = Common.ApproachWeighted(targetSpeedX, currentSpeedX, 0.001f * groundAccel);
+            currentSpeedX = Common.ApproachWeighted(targetSpeedX, currentSpeedX, 0.03f * groundAccel);
 		
 		// Jump 
 		if (kJumpDown) 
