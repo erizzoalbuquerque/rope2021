@@ -50,7 +50,7 @@ public class PlayerManager : MonoBehaviour {
     {
         isAlive = false;
 
-        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
 		ropeIsEnabled = this.gameObject.GetComponent<Rope> ().enabled;
         this.gameObject.GetComponent<Rope>().enabled = false;
         this.gameObject.GetComponent<Protagonist>().enabled = false;
@@ -63,7 +63,7 @@ public class PlayerManager : MonoBehaviour {
     {
         isAlive = true;
 
-        this.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
 		this.gameObject.GetComponent<Rope>().enabled = ropeIsEnabled;
         this.gameObject.GetComponent<Protagonist>().enabled = true;
         this.gameObject.GetComponent<Collider2D>().enabled = true;
