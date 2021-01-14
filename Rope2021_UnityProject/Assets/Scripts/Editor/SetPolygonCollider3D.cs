@@ -43,7 +43,7 @@ public static class SetPolygonCollider3D
         List<Vector3> vertices = new List<Vector3>();
         meshCollider.sharedMesh.GetVertices(vertices);
 
-        Debug.Log(vertices.ToString());
+        //Debug.Log(vertices.ToString());
 
         var boundaryPath = EdgeHelpers.GetEdges(meshCollider.sharedMesh.triangles).FindBoundary().SortEdges();
 
@@ -56,7 +56,15 @@ public static class SetPolygonCollider3D
 
         for (int i = 0; i < yourVectors.Length; i++)
         {
-            newColliderVertices.Add(new Vector2(yourVectors[i].x, yourVectors[i].y));
+            Vector2 newColliderVertice = new Vector2(yourVectors[i].x, yourVectors[i].y);
+
+            if (!newColliderVertices.Contains(newColliderVertice))
+            {
+                newColliderVertices.Add(newColliderVertice);
+                Debug.Log("point: " + newColliderVertice.x.ToString() + " , " + newColliderVertice.y.ToString());
+            }
+
+            
         }
 
         Vector2[] newPoints = newColliderVertices.Distinct().ToArray();

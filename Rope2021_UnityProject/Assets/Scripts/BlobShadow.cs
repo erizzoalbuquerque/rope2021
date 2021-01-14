@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BlobShadow : MonoBehaviour
 {
-    [SerializeField] Transform blobShadowQaud;
-    [SerializeField] float maxDistance;
+    [SerializeField] Transform blobShadowQaud = null;
+    [SerializeField] float maxDistance = 10f;
     [SerializeField] float offsetAboveTheGround= 0.001f;
     [SerializeField] LayerMask whatIsGround;
 
