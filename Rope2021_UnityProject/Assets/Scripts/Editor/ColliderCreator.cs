@@ -12,6 +12,7 @@ using UnityEditor.SceneManagement;
 public class ColliderCreator
 {
     static readonly string GAMEOBJECTHOLDERNAME = "PolygonColliderHolder";
+    static readonly bool disableMeshCollidersAfterConvertion = true;
 
     [MenuItem("Tools/CreatePolygonColliderFromMeshCollider %t", false, -1)]
     static void UpdatePolygonColliders()
@@ -39,6 +40,9 @@ public class ColliderCreator
             Transform polygonColliderHolder = GetHolderTransform(meshCollider.transform);
 
             CreatePolygonColliderFromMesh(mesh, polygonColliderHolder);
+
+            if (disableMeshCollidersAfterConvertion)
+                meshCollider.enabled = false;
 
             Debug.Log(meshCollider.name + " PolygonCollider2D created SUCCESFULLY.");
         }
