@@ -9,7 +9,7 @@ using UnityEditor.SceneManagement;
 /// Based in this algorithm found online:
 /// https://www.h3xed.com/programming/automatically-create-polygon-collider-2d-from-2d-mesh-in-unity
 /// </summary>
-public class ColliderCreator
+public class MeshColliderToPolygonColliderConverter
 {
     static readonly string GAMEOBJECTHOLDERNAME = "PolygonColliderHolder";
     static readonly bool disableMeshCollidersAfterConvertion = true;
