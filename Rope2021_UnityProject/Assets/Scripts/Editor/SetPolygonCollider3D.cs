@@ -7,9 +7,12 @@ using UnityEditor.SceneManagement;
 using System.Linq;
 using UnityEngine.ProBuilder;
 
+/// <summary>
+/// Old Method to convert 3d colliders into 2d colliders. Doesn't work all the time.
+/// </summary>
 public static class SetPolygonCollider3D
 {
-    [MenuItem("Tools/Update Polygon Colliders %t", false, -1)]
+    [MenuItem("Tools/Update Polygon Colliders (depecrated)", false, -1)]
     static void UpdatePolygonColliders()
     {
         Transform transform = Selection.activeTransform;

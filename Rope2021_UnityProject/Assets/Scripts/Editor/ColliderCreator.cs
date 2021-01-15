@@ -3,6 +3,12 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
+/// <summary>
+/// Create a PolygonCollider2D using a MeshCollider3D as reference. The PolygonCollider is created as a child of the Game Object. Also, if the
+/// Mesh Collider is enabled, it is disabled. This code doesn't work for meshes with a hole whitin.
+/// Based in this algorithm found online:
+/// https://www.h3xed.com/programming/automatically-create-polygon-collider-2d-from-2d-mesh-in-unity
+/// </summary>
 public class ColliderCreator
 {
     static readonly string GAMEOBJECTHOLDERNAME = "PolygonColliderHolder";
@@ -110,6 +116,10 @@ public class ColliderCreator
         int nextVert = startVert;
         int highestVert = startVert;
         List<Vector2> colliderPath = new List<Vector2>();
+        // NEW CODE BEGIN ---------------------------
+        int longerPathCount = 0;
+        // NEW CODE END ---------------------------
+
         while (true)
         {
 
@@ -128,10 +138,19 @@ public class ColliderCreator
             // Shape complete
             if (nextVert == startVert)
             {
+                // OLD CODE BEGIN ---------------------------
+                //polygonCollider.pathCount++;
+                //polygonCollider.SetPath(polygonCollider.pathCount - 1, colliderPath.ToArray());
+                // OLD CODE END ---------------------------
 
-                // Add path to polygon collider
-                polygonCollider.pathCount++;
-                polygonCollider.SetPath(polygonCollider.pathCount - 1, colliderPath.ToArray());
+                // NEW CODE BEGIN ---------------------------
+                if (colliderPath.Count > longerPathCount)
+                {
+                    longerPathCount = colliderPath.Count;
+                    polygonCollider.SetPath(0, colliderPath.ToArray());
+                }
+                // NEW CODE END ---------------------------
+
                 colliderPath.Clear();
 
                 // Go to next shape if one exists
