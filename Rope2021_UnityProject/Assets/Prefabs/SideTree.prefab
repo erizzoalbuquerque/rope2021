@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4685861444403440}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: SideTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7563824600927273062}
   - component: {fileID: 4072540657689829459}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}

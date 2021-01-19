@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4385931918954276}
   - component: {fileID: 212675395528658766}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: New Sprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 58427119950181528}
   - component: {fileID: 114019378759434222}
   - component: {fileID: 111354176917738694}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4616861999336514}
   - component: {fileID: 212638995950786030}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: New Sprite (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4799274494080798}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4825009980339558}
   - component: {fileID: 212480281835119276}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

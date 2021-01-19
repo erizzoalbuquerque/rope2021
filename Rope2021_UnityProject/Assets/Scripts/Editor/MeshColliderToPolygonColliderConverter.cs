@@ -12,7 +12,7 @@ using UnityEditor.SceneManagement;
 public class MeshColliderToPolygonColliderConverter
 {
     static readonly string GAMEOBJECTHOLDERNAME = "PolygonColliderHolder";
-    static readonly bool disableMeshCollidersAfterConvertion = true;
+    static readonly bool disableMeshCollidersAfterConvertion = false;
 
     [MenuItem("Tools/CreatePolygonColliderFromMeshCollider %t", false, -1)]
     static void UpdatePolygonColliders()
