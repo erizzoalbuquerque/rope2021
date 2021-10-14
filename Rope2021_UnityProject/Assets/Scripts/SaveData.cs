@@ -21,6 +21,8 @@ public class SaveData
         }
     }
 
-    public int numberOfBLocks;
-    public Vector3[] positions;
+    public int numberOfSolidBlocks;
+    public Vector3[] solidBlocksPositions;
+    public int numberOfLavaBlocks;
+    public Vector3[] lavaBlocksPositions;
 }

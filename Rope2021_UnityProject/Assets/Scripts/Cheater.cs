@@ -23,7 +23,12 @@ public class Cheater : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
             cameraTarget.localPosition = new Vector3(cameraStartLocalPosition.x, cameraStartLocalPosition.y, cameraStartLocalPosition.z * 3f);
 
-        if (Input.GetKeyDown(KeyCode.R) && Input.GetKeyDown(KeyCode.LeftControl))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (Input.GetKeyDown(KeyCode.F4))
+            ResetScene();
+    }
+
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
