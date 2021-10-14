@@ -11,6 +11,7 @@ public class DebugController : MonoBehaviour
     public Canvas consoleCanvas;
     public SaveSystem saveSystem;
     public TMP_Text text;
+    public TMP_InputField inputField;
 
     public static DebugCommand<string> PRINT;
     public static DebugCommand<string> SAVE;
@@ -100,8 +101,14 @@ public class DebugController : MonoBehaviour
     void ShowConsole(bool show)
     {
         consoleCanvas.gameObject.SetActive(show);
-        text.text = "";
-        PrintHelpText();
+
+        if (show == true)
+        {
+            text.text = "";
+            PrintHelpText();
+
+            inputField.ActivateInputField();
+        }        
     }
 
     public void OnConfirmInput(string input)

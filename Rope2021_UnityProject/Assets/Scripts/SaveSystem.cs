@@ -11,7 +11,7 @@ public class SaveSystem : MonoBehaviour
 
     private void Awake()
     {
-        savePath = Application.dataPath + "/saves";
+        savePath = Application.persistentDataPath + "/saves";
     }
 
     [ContextMenu("Save")]
