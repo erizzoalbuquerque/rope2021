@@ -251,7 +251,7 @@ MonoBehaviour:
   maxSearchAngle: 35
   angleDiscretization: 1
   tangentBoost: 500
-  ropeDistanceChangeConst: 2000
+  ropeDistanceChangeConst: 1100
   ropeIsActive: 0
   GrappableObjectLayers:
     serializedVersion: 2
@@ -342,7 +342,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -30
+  m_SortingOrder: 5
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -1093,7 +1093,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 2f7625cd95af97644b39a5bb252f5d1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

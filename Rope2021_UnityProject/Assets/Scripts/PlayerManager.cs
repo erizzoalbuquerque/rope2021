@@ -53,7 +53,7 @@ public class PlayerManager : MonoBehaviour {
         this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
 		ropeIsEnabled = this.gameObject.GetComponent<Rope> ().enabled;
         this.gameObject.GetComponent<Rope>().enabled = false;
-        this.gameObject.GetComponent<Protagonist>().enabled = false;
+        this.gameObject.GetComponent<NewProtagonist>().enabled = false;
         this.gameObject.GetComponent<Collider2D>().enabled = false;
 
         this.gameObject.GetComponent<Rigidbody2D>().Sleep();
@@ -65,7 +65,7 @@ public class PlayerManager : MonoBehaviour {
 
         this.gameObject.GetComponentInChildren<SpriteRenderer>().enabled = true;
 		this.gameObject.GetComponent<Rope>().enabled = ropeIsEnabled;
-        this.gameObject.GetComponent<Protagonist>().enabled = true;
+        this.gameObject.GetComponent<NewProtagonist>().enabled = true;
         this.gameObject.GetComponent<Collider2D>().enabled = true;
 
         this.gameObject.GetComponent<Rigidbody2D>().WakeUp();
