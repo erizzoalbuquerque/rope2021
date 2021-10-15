@@ -1,4 +1,4 @@
-# rope2021
+# There's no Rope 2021
 Remake of an old prototype. There's rope this time!...
 
 ...But there's no game. Just a very simple level editor, so you can play with the character and create any simple world you can imagine.
