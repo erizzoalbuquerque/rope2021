@@ -27,8 +27,9 @@ public class Rope : MonoBehaviour {
 	public bool ropeIsActive = false;
 	
 	bool showAimingDirection;
-        
-	public LayerMask GrappableObjectLayers;
+
+    public LayerMask canCollideWithRopeLayers;
+    public LayerMask GrappableObjectLayers;
 
 	Queue<Vector2> anchorsList;
     
@@ -95,6 +96,8 @@ public class Rope : MonoBehaviour {
 				}
 
                 RaycastHit2D hit = new RaycastHit2D();
+                bool firstRaycastBlockedBySomething = false;
+                Vector2 firstPointHit = Vector2.zero;
 
 				Vector2 searchDirection = aimingDirection;
 				for (float searchAngle = 0.0f; searchAngle < maxSearchAngle; searchAngle += angleDiscretization)
@@ -102,7 +105,7 @@ public class Rope : MonoBehaviour {
                     searchDirection = new Vector2(aimingDirection.x * Mathf.Cos(Mathf.Deg2Rad * searchAngle) - aimingDirection.y * Mathf.Sin(Mathf.Deg2Rad * searchAngle),
 					                              aimingDirection.x * Mathf.Sin(Mathf.Deg2Rad * searchAngle) + aimingDirection.y * Mathf.Cos(Mathf.Deg2Rad * searchAngle));
 					
-					hit = Physics2D.Raycast(this.GetComponent<Rigidbody2D>().position, searchDirection, maxDistance, GrappableObjectLayers.value);
+					hit = Physics2D.Raycast(this.GetComponent<Rigidbody2D>().position, searchDirection, maxDistance, canCollideWithRopeLayers.value);
 					if (hit.collider != null && ((GrappableObjectLayers | (1 << hit.collider.gameObject.layer)) == GrappableObjectLayers))
                     {
                         break;
@@ -111,12 +114,19 @@ public class Rope : MonoBehaviour {
                     searchDirection = new Vector2(aimingDirection.x * Mathf.Cos(Mathf.Deg2Rad * -searchAngle) - aimingDirection.y * Mathf.Sin(Mathf.Deg2Rad * -searchAngle),
 					                              aimingDirection.x * Mathf.Sin(Mathf.Deg2Rad * -searchAngle) + aimingDirection.y * Mathf.Cos(Mathf.Deg2Rad * -searchAngle));
 					
-					hit = Physics2D.Raycast(this.GetComponent<Rigidbody2D>().position, searchDirection, maxDistance);
+					hit = Physics2D.Raycast(this.GetComponent<Rigidbody2D>().position, searchDirection, maxDistance, canCollideWithRopeLayers);
 
                     if (hit.collider != null && ((GrappableObjectLayers | (1 << hit.collider.gameObject.layer)) == GrappableObjectLayers))
                     {
                         break;
                     }
+
+                    if (searchAngle == 0f && hit.collider != null)
+                    {
+                        firstRaycastBlockedBySomething = true;
+                        firstPointHit = hit.point; //Use it in case rope doesn't grab to anything and we need to show fail feedback
+                    }
+
                 }
 
 				if (hit.collider != null && ((GrappableObjectLayers | (1 << hit.collider.gameObject.layer)) == GrappableObjectLayers)) {
@@ -142,10 +152,10 @@ public class Rope : MonoBehaviour {
 					audioSource.PlayOneShot (hookedClip, 2f);
 				} else 
 				{
-					if (hit.collider == null)
+					if (firstRaycastBlockedBySomething == false)
 						lineRenderer.SetPosition(0,this.gameObject.transform.position +  ((Vector3) aimingDirection).normalized * maxDistance);
 					else
-						lineRenderer.SetPosition(0,hit.point);
+						lineRenderer.SetPosition(0,firstPointHit);
 						
 					StartCoroutine ("DisplayFailedRope");
                 }
@@ -225,7 +235,7 @@ public class Rope : MonoBehaviour {
 		int counter = 0;
 
 		lineRenderer.enabled = true;
-		float alpha = 0.07f;
+		float alpha = 0.2f;
 
 		Color color = new Color (1, 1, 1, alpha);
 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5060682188419440983}
   - component: {fileID: 5060682188414882687}
   - component: {fileID: 5060682188411770189}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LavaBlock
   m_TagString: LevelEditorBlock
   m_Icon: {fileID: 0}
