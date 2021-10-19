@@ -231,23 +231,22 @@ public class Rope : MonoBehaviour {
 
 	IEnumerator DisplayFailedRope()
 	{
-		int nFramesToFade = 12;
-		int counter = 0;
+        float secondsToFade = 0.3f;
+        float timeWhenStarted = Time.time;
 
 		lineRenderer.enabled = true;
 		float alpha = 0.2f;
 
 		Color color = new Color (1, 1, 1, alpha);
 
-		while (counter < nFramesToFade) 
+		while (Time.time - timeWhenStarted < secondsToFade) 
 		{
-			color = new Color (1f, 1f, 1f, alpha * (1f - (float)counter / (float)nFramesToFade));  
+			color = new Color (1f, 1f, 1f, alpha * (1f - (float)(Time.time - timeWhenStarted) / (float)secondsToFade));  
 			//lineRenderer.SetColors (color, color);
             lineRenderer.startColor = color;
             lineRenderer.endColor = color;
 
             lineRenderer.SetPosition(1,this.gameObject.transform.position);
-			counter += 1;
 			yield return null;
 		}
 

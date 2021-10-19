@@ -127,7 +127,7 @@ public class Bird : MonoBehaviour {
 
         while (_spriteRenderer.isVisible)
         {
-            v = 0.95f * v + 0.05f * _runAwayDirection * _runSpeed;
+            v = 0.95f * v + 0.05f * _runAwayDirection * _runSpeed * Time.deltaTime;
 
             transform.position += v;
 
