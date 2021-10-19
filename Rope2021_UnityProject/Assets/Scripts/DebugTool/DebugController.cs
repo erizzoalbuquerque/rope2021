@@ -12,11 +12,14 @@ public class DebugController : MonoBehaviour
     public SaveSystem saveSystem;
     public TMP_Text text;
     public TMP_InputField inputField;
+    public NewProtagonist player;
+    public PlayerManager playerManager;
 
     public static DebugCommand<string> PRINT;
     public static DebugCommand<string> SAVE;
     public static DebugCommand<string> LOAD;
     public static DebugCommand HELP;
+    public static DebugCommand SET_CHECKPOINT;
 
     public List<object> commandList;
 
@@ -51,6 +54,11 @@ public class DebugController : MonoBehaviour
                 PrintOnConsole("ERROR while loading. Couldn't find <" + x + ">.");
         });
 
+        SET_CHECKPOINT = new DebugCommand("set_checkpoint", "Set checkpoint at your current position.", "set_checkpoint", () =>
+        {
+            SetCheckpoint();
+        });
+
         HELP = new DebugCommand("help", "Show all commands.", "help", () =>
         {
             PrintHelpText();
@@ -62,8 +70,15 @@ public class DebugController : MonoBehaviour
             SAVE,
             LOAD,
             PRINT,
+            SET_CHECKPOINT,
             HELP
         };
+    }
+
+    private void SetCheckpoint()
+    {
+        playerManager.SetCheckpointPosition(player.transform.position);
+        PrintOnConsole("Checkpoint succesfully set at current position.");
     }
 
     // Update is called once per frame
