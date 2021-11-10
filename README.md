@@ -7,6 +7,8 @@ Remake of an old prototype. There's rope this time!...
 
 [**Play it on browser**](https://erizzoalbuquerque.github.io/rope2021/Docs/Game/index.html) (You can't save between sessions on the browser)
 
+Disclaimer: The majority of the code was wirtten in 2016 and is disgusting. Be warned.
+
 ![Cover](/Docs/Images/cover.png)
 
 Designed by Eduardo Rizzo
