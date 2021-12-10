@@ -353,7 +353,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -381,8 +381,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1688169695
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -3042,7 +3042,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3070,8 +3070,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1688169695
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -3255,8 +3255,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1688169695
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b35375bf34d1a8b4c8890ff74ae1fef6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3450,8 +3450,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1688169695
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b35375bf34d1a8b4c8890ff74ae1fef6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3784,6 +3784,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2599390875612861367, guid: 94abcbbc221f9e74fa060015d3a301e7,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599390875612861367, guid: 94abcbbc221f9e74fa060015d3a301e7,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1688169695
+      objectReference: {fileID: 0}
     - target: {fileID: 2801248312263448411, guid: 94abcbbc221f9e74fa060015d3a301e7,
         type: 3}
       propertyPath: hookedClip
@@ -3858,6 +3868,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NewProtagonist
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828559269425434240, guid: 94abcbbc221f9e74fa060015d3a301e7,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828559269425434240, guid: 94abcbbc221f9e74fa060015d3a301e7,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1688169695
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94abcbbc221f9e74fa060015d3a301e7, type: 3}
@@ -4158,7 +4178,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
