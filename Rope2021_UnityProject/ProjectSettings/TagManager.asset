@@ -42,15 +42,15 @@ TagManager:
   - name: Sky
     uniqueID: 3451935199
     locked: 0
+  - name: Wall
+    uniqueID: 1287362503
+    locked: 0
+  - name: Mid_back
+    uniqueID: 1234127261
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: MID_back
-    uniqueID: 1234127261
-    locked: 0
-  - name: MID_mid
-    uniqueID: 1688169695
-    locked: 0
-  - name: MID_Fore
+  - name: Mid_Fore
     uniqueID: 480358559
     locked: 0
