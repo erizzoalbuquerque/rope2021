@@ -6,9 +6,9 @@ public class CollsionWithTriggerCollider : MonoBehaviour
     [SerializeField] Rigidbody2D _rb;
 
     [SerializeField] float _minSpeed = 0f;
-    [SerializeField] float _maxSpeed = 1f;
+    [SerializeField] float _maxSpeed = 10f;
     
-    [SerializeField] float _forceAtMaxSpeed = 1000f;
+    [SerializeField] float _impactMultiplier = 0.7f;
 
     [SerializeField] LayerMask _canCollideLayers = default;
 
@@ -32,19 +32,22 @@ public class CollsionWithTriggerCollider : MonoBehaviour
         if (_canCollideLayers == (_canCollideLayers | (1 << collision.gameObject.layer)))
         {
             //print("Applying forces.");
-            Rigidbody2D collisionRb = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (collisionRb == null)
+            Rigidbody2D otherRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+            if (otherRigidbody == null)
             {
                 return;
             }
 
-            float force = _forceAtMaxSpeed * (collisionRb.velocity.magnitude - _minSpeed) / (_maxSpeed - _minSpeed);
-            force = Mathf.Clamp(force, 0f, _forceAtMaxSpeed);           
+            float collisionSpeed = otherRigidbody.velocity.magnitude;
 
-            Vector3 forceDirection = collisionRb.velocity.normalized;
+            if (collisionSpeed < _minSpeed)
+            {
+                return;
+            }
 
-            //print("force added to Rigidbody: " + (force * forceDirection * Time.deltaTime));
-            _rb.AddForceAtPosition(force * forceDirection * Time.deltaTime,collisionRb.position);
+            Vector2 collisionDirection = otherRigidbody.velocity.normalized;
+
+            _rb.velocity = _rb.velocity + collisionDirection * Mathf.Clamp(collisionSpeed,0f,_maxSpeed) * _impactMultiplier;
         }
     }
 }

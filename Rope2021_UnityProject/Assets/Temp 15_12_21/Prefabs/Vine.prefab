@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1287362503
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 3596250166403191370, guid: fd18e9455a10edc4cad20858f0010189,
     type: 3}
@@ -220,7 +220,7 @@ MonoBehaviour:
   _rb: {fileID: 0}
   _minSpeed: 0
   _maxSpeed: 10
-  _forceAtMaxSpeed: 10000
+  _impactMultiplier: 0.7
   _canCollideLayers:
     serializedVersion: 2
     m_Bits: 256
@@ -235,6 +235,8 @@ GameObject:
   - component: {fileID: 1269090202829234320}
   - component: {fileID: 1269090202829234322}
   - component: {fileID: 1269090202829234323}
+  - component: {fileID: 1804937281}
+  - component: {fileID: 1804937280}
   m_Layer: 0
   m_Name: end
   m_TagString: Untagged
@@ -301,6 +303,41 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: -45
     m_UpperAngle: 45
+--- !u!58 &1804937281
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269090202829234321}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3
+--- !u!114 &1804937280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269090202829234321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62140ebef9437f4c92b08b545ab8217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rb: {fileID: 0}
+  _minSpeed: 0
+  _maxSpeed: 10
+  _impactMultiplier: 0.7
+  _canCollideLayers:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1269090203243259195
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +448,7 @@ MonoBehaviour:
   _rb: {fileID: 0}
   _minSpeed: 0
   _maxSpeed: 10
-  _forceAtMaxSpeed: 10000
+  _impactMultiplier: 0.7
   _canCollideLayers:
     serializedVersion: 2
     m_Bits: 256
@@ -525,7 +562,7 @@ MonoBehaviour:
   _rb: {fileID: 0}
   _minSpeed: 0
   _maxSpeed: 10
-  _forceAtMaxSpeed: 10000
+  _impactMultiplier: 0.7
   _canCollideLayers:
     serializedVersion: 2
     m_Bits: 256
