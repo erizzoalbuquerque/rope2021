@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PropWithWind
+  m_Name: TrunkWind
   m_Shader: {fileID: -6465566751694194690, guid: 97d802d654b05534ba5148ce2fd10567,
     type: 3}
   m_ShaderKeywords: 
@@ -20,7 +20,19 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -38,12 +50,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_68b8c214cb4c4795a7e746d6318853ca: 0
-    - Vector1_5b04b02d44374a2e90a8d2bcdace865e: 0.18
-    - Vector1_c08ad5bb33bf4bd7b165f9bed2993947: 2.83
-    - Vector1_e2549f4a66024816aedb5088b28e2687: 0.14
+    - Vector1_5b04b02d44374a2e90a8d2bcdace865e: 0.14
+    - Vector1_c08ad5bb33bf4bd7b165f9bed2993947: 0
+    - Vector1_e2549f4a66024816aedb5088b28e2687: 0.19
+    - _EnableExternalAlpha: 0
     m_Colors:
-    - Vector2_8ce0cf395d4341b5af11acbb8b385810: {r: 0, g: -1.32, b: 0, a: 0}
-    - Vector2_b2b4fd9d650b44c580183f57bbe3380c: {r: 0.56, g: 3.12, b: 0, a: 0}
-    - Vector2_e06bd598e1be479c9e30e0a8d20cb189: {r: 9, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_8ce0cf395d4341b5af11acbb8b385810: {r: 0, g: -0.16, b: 0, a: 0}
+    - Vector2_b2b4fd9d650b44c580183f57bbe3380c: {r: 1, g: 0.95, b: 0, a: 0}
+    - Vector2_e06bd598e1be479c9e30e0a8d20cb189: {r: 5.67, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
