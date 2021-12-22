@@ -13,16 +13,19 @@ MonoBehaviour:
   m_Name: GrassHirochi
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -10
-    m_End: 10
+  - m_Start: -32
+    m_End: 174
     m_Order: 10
     m_Sprites:
     - {fileID: 21300000, guid: b34a3fef4dfb44341a845b70c9fc8cff, type: 3}
-  - m_Start: 10
-    m_End: 350
+    - {fileID: 21300000, guid: 74d9db5ac621a6940a671faa863a8191, type: 3}
+  - m_Start: -186
+    m_End: -32
     m_Order: 0
     m_Sprites:
     - {fileID: -5519790128936537583, guid: 7c3d431afe65f7648837a561d139c397, type: 3}
+    - {fileID: -5747100780111875064, guid: d514a21d938c4c640afb44a8005a74de, type: 3}
+    - {fileID: -2752186951506226725, guid: d514a21d938c4c640afb44a8005a74de, type: 3}
   m_FillTexture: {fileID: 2800000, guid: 22603e3b22080044aaf9d6cfaef8674c, type: 3}
   m_CornerSprites:
   - m_CornerType: 0
