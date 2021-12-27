@@ -13,23 +13,13 @@ MonoBehaviour:
   m_Name: Terrain2SpriteShapeProfile
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -45
-    m_End: 45
-    m_Order: 4
-    m_Sprites: []
-  - m_Start: -135
-    m_End: -45
-    m_Order: 3
-    m_Sprites: []
-  - m_Start: 135
-    m_End: 225
-    m_Order: 2
-    m_Sprites: []
-  - m_Start: 45
-    m_End: 135
-    m_Order: 1
-    m_Sprites: []
-  m_FillTexture: {fileID: 2800000, guid: 949948fff450c7942923839b58c6cb80, type: 3}
+  - m_Start: -58
+    m_End: 302
+    m_Order: 0
+    m_Sprites:
+    - {fileID: -3040323514432226700, guid: f9baa115c3d93b8488d8c970c66d51c1, type: 3}
+    - {fileID: 21300000, guid: b34a3fef4dfb44341a845b70c9fc8cff, type: 3}
+  m_FillTexture: {fileID: 2800000, guid: 2449f14228afe6b4aabd46613fb0a241, type: 3}
   m_CornerSprites:
   - m_CornerType: 0
     m_Sprites:
@@ -56,4 +46,4 @@ MonoBehaviour:
     m_Sprites:
     - {fileID: 0}
   m_FillOffset: 0
-  m_UseSpriteBorders: 1
+  m_UseSpriteBorders: 0

@@ -16,8 +16,7 @@ MonoBehaviour:
   - m_Start: -45
     m_End: 45
     m_Order: 4
-    m_Sprites:
-    - {fileID: 0}
+    m_Sprites: []
   - m_Start: -135
     m_End: -45
     m_Order: 3
@@ -34,10 +33,10 @@ MonoBehaviour:
   m_CornerSprites:
   - m_CornerType: 0
     m_Sprites:
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 88e91cf06ea89b448af745a13ee1df28, type: 3}
   - m_CornerType: 1
     m_Sprites:
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 7759e20547bbbc447b6602e24d11f7a6, type: 3}
   - m_CornerType: 2
     m_Sprites:
     - {fileID: 0}
@@ -57,4 +56,4 @@ MonoBehaviour:
     m_Sprites:
     - {fileID: 0}
   m_FillOffset: 0
-  m_UseSpriteBorders: 1
+  m_UseSpriteBorders: 0
