@@ -7,8 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprite-Lit-Default
-  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
+  m_Name: SpriteLit_ColorFog
+  m_Shader: {fileID: -6465566751694194690, guid: 5b0fe54e0d4449448bc4ae5b7ab5ed94,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,26 +20,29 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MaskTex:
+    - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NormalMap:
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _EnableExternalAlpha: 0
+    - Vector1_7f4676ec344942ffa219f4f5d9511ebc: -10
+    - Vector1_c8accb6d4e814afb9c4628522338a8f4: 10
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - Color_e3d895a60c304f4fa218e47507266db5: {r: 0.24764152, g: 0.25777036, b: 0.3301887,
+        a: 1}
+    - Color_ff8fe6ab46a94cc9aeeac9066fd6646a: {r: 0.45098042, g: 0.5411765, b: 0.5019608,
+        a: 1}
+    - Vector2_15d4e156c7ab460bb5f2aff5a64b16d8: {r: -10, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
