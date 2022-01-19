@@ -1681,7 +1681,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "baa3f4b1647e4e1ab422dd9a81e1ea82",
     "m_Id": 0,
-    "m_DisplayName": "Vector4",
+    "m_DisplayName": "ColorIn",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
