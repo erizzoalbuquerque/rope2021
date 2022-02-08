@@ -57,3 +57,6 @@ TagManager:
   - name: Mid_Fore
     uniqueID: 480358559
     locked: 0
+  - name: Foreground
+    uniqueID: 1454166907
+    locked: 0
