@@ -4695,7 +4695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134407996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.502754, y: -4.6463423, z: 8.13}
+  m_LocalPosition: {x: 58.7, y: -5.1, z: 35.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10821,16 +10821,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheap_Bg_Clouds
       objectReference: {fileID: 0}
-    - target: {fileID: 4585632043381984669, guid: e6281f3ae1ee161458a14e8ff45d2479,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4585632043381984669, guid: e6281f3ae1ee161458a14e8ff45d2479,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1375330707
-      objectReference: {fileID: 0}
     - target: {fileID: 4585632043381984675, guid: e6281f3ae1ee161458a14e8ff45d2479,
         type: 3}
       propertyPath: m_RootOrder
@@ -12553,11 +12543,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 600642790520797199, guid: 0b9241b87ad8e2341a161d2bc7d0aabd,
-        type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b9241b87ad8e2341a161d2bc7d0aabd, type: 3}
