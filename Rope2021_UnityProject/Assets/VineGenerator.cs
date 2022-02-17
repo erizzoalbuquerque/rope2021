@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Automatizes the creation of a Vine o variable size. Should be used with the pre configured prefab.
+/// Automatizes the creation of a Vine of variable size. Should be used with the pre configured prefab.
 /// </summary>
 [ExecuteInEditMode]
 public class VineGenerator : MonoBehaviour
@@ -25,7 +25,10 @@ public class VineGenerator : MonoBehaviour
 
     void Start()
     {
-        print("Start");
+        //Any modification on this Prefab shouldn't be saved, so we unpack it.
+        if (UnityEditor.PrefabUtility.IsPartOfAnyPrefab(this.gameObject)) 
+            UnityEditor.PrefabUtility.UnpackPrefabInstance(this.gameObject, UnityEditor.PrefabUnpackMode.Completely, UnityEditor.InteractionMode.AutomatedAction);       
+
         _lineRenderer = GetComponent<LineRenderer>();
         _lastVineSize = _vineSize;
     }
@@ -51,7 +54,6 @@ public class VineGenerator : MonoBehaviour
     [ContextMenu("GenerateVine")]
     public void GenerateVine()
     {
-        print("Gen");
         if (_vineBonePrefab == null || _vineTipPrefab == null)
             return;
 
@@ -80,7 +82,6 @@ public class VineGenerator : MonoBehaviour
 
     void CreateBones()
     {
-        print("Create");
         DeleteBones();
 
         _bones = new List<GameObject>();
@@ -105,6 +106,8 @@ public class VineGenerator : MonoBehaviour
                 joint.connectedBody = _bones[i - 1].GetComponent<Rigidbody2D>();
             }
         }
+
+        print("Created new bones to vine:" + this.gameObject.name);
     }
 
     void DeleteBones()
@@ -122,10 +125,9 @@ public class VineGenerator : MonoBehaviour
 
     void UpdateVinePoints()
     {
-        if (_bones == null || _bones.Count == 0 || _vineTip == null)
+        if (_bones == null || _bones.Count == 0)
             return;
 
-        print("UpV");
         Vector3[] positions = new Vector3[_bones.Count];
         for (int i = 0; i < _bones.Count; i++)
         {
@@ -157,5 +159,16 @@ public class VineGenerator : MonoBehaviour
             return;
 
         DestroyImmediate(_vineTip);
+        _vineTip = null;
+    }
+
+    [ContextMenu("Clean")]
+    void Clean()
+    {
+        DeleteBones();
+        DeleteVineTip();
+
+        _lineRenderer.positionCount = 2;
+        _lineRenderer.SetPosition(1, Vector2.down);
     }
 }
