@@ -4,6 +4,8 @@ using UnityEngine;
 
 /// <summary>
 /// Automatizes the creation of a Vine of variable size. Should be used with the pre configured prefab.
+/// 
+/// TODO: Separte this class in Generator and Updator
 /// </summary>
 [ExecuteInEditMode]
 public class VineGenerator : MonoBehaviour
