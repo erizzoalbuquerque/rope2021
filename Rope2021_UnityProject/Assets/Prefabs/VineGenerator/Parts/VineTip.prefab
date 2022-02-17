@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3601286234478732748}
   - component: {fileID: 5251923485554110754}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7731903462472799592}
   - component: {fileID: 211134021}
   - component: {fileID: 2334960285532554180}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: VineTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
