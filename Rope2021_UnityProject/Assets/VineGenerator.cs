@@ -10,21 +10,23 @@ public class VineGenerator : MonoBehaviour
 {
     [SerializeField] float _vineSize = 1f;
     [SerializeField] float _aproxSizeBetweenPoints = 1f;
-    [SerializeField] Vector2 _vineTipOffset = Vector2.zero;
 
     [SerializeField] GameObject _vineBonePrefab;
-    [SerializeField] Transform _vineTip;
-    
- 
+    [SerializeField] GameObject _vineTipPrefab;
+     
     private LineRenderer _lineRenderer;
 
-    public  List<GameObject> bones;
+    public  List<GameObject> _bones;
+    public  GameObject _vineTip;
 
     private float _lastVineSize = 1f;
 
-    // Start is called before the first frame update
+    //private bool _vineIsGenerated = false;
+
+
     void Start()
     {
+        print("Start");
         _lineRenderer = GetComponent<LineRenderer>();
         _lastVineSize = _vineSize;
     }
@@ -32,18 +34,28 @@ public class VineGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Application.isEditor)
+        if (!Application.isPlaying)
         {
             if (_lastVineSize != _vineSize)
-                ResizeVine();
+            {
+                _lastVineSize = _vineSize;
+                GenerateVine();
+            }
         }
 
-        UpdateVinePoints();
+        if (Application.isPlaying)
+        {
+            UpdateVinePoints();
+        }
     }
 
     [ContextMenu("GenerateVine")]
     public void GenerateVine()
     {
+        print("Gen");
+        if (_vineBonePrefab == null || _vineTipPrefab == null)
+            return;
+
         int numberOfPoints = Mathf.RoundToInt(_vineSize / _aproxSizeBetweenPoints);
 
         if (numberOfPoints < 2)
@@ -62,14 +74,17 @@ public class VineGenerator : MonoBehaviour
         _lineRenderer.SetPositions(positions);
 
         CreateBones();
-        PlaceVineTip();
+        CreateVineTip();
+
+        //_vineIsGenerated = true;
     }
 
     void CreateBones()
     {
+        print("Create");
         DeleteBones();
 
-        bones = new List<GameObject>();
+        _bones = new List<GameObject>();
 
         for (int i = 0; i < _lineRenderer.positionCount; i++)
         {
@@ -79,57 +94,69 @@ public class VineGenerator : MonoBehaviour
             //Set Position
             newBone.transform.position = this.transform.TransformPoint(_lineRenderer.GetPosition(i));
 
-            bones.Add(newBone);
+            _bones.Add(newBone);
         }
 
         //Set-up Joints
-        for (int i = 0; i < bones.Count; i++)
+        for (int i = 0; i < _bones.Count; i++)
         {
             if (i != 0)
             {
-                HingeJoint2D joint = bones[i].GetComponent<HingeJoint2D>();
-                joint.connectedBody = bones[i - 1].GetComponent<Rigidbody2D>();
+                HingeJoint2D joint = _bones[i].GetComponent<HingeJoint2D>();
+                joint.connectedBody = _bones[i - 1].GetComponent<Rigidbody2D>();
             }
         }
     }
 
     void DeleteBones()
     {
-        for (int i = 0; i < bones.Count; i++)
+        if (_bones == null)
+            return;
+
+        for (int i = 0; i < _bones.Count; i++)
         {
-            DestroyImmediate(bones[i]);
+            DestroyImmediate(_bones[i]);
         }
 
-        bones.Clear();
+        _bones.Clear();
     }
 
     void UpdateVinePoints()
     {
-        Vector3[] positions = new Vector3[bones.Count];
-        for (int i = 0; i < bones.Count; i++)
+        if (_bones == null || _bones.Count == 0 || _vineTip == null)
+            return;
+
+        print("UpV");
+        Vector3[] positions = new Vector3[_bones.Count];
+        for (int i = 0; i < _bones.Count; i++)
         {
-            positions[i] = this.transform.InverseTransformPoint(bones[i].transform.position);
+            positions[i] = this.transform.InverseTransformPoint(_bones[i].transform.position);
         }
 
         _lineRenderer.SetPositions(positions);
     }
 
-    void ResizeVine()
-    {
-        //_lineRenderer.SetPosition(_numberOfPoints - 1, _vineSize * Vector3.down);
-        //
-        //PlaceVineTip();
-        //
-        //_lastVineSize = _vineSize;
-    }
 
-    void PlaceVineTip()
+    void CreateVineTip()
     {
+        DeleteVineTip();
+
+        _vineTip = Instantiate(_vineTipPrefab,this.transform);
+        _vineTip.name = "VineTip";
+
         //Set Position
-        _vineTip.position = this.transform.TransformPoint(_lineRenderer.GetPosition(_lineRenderer.positionCount-1) + (Vector3)_vineTipOffset);
+        _vineTip.transform.position = this.transform.TransformPoint(_lineRenderer.GetPosition(_lineRenderer.positionCount-1));
 
         //Set-up Joints
-        HingeJoint2D joint = _vineTip.GetComponent<HingeJoint2D>();
-        joint.connectedBody = bones[_lineRenderer.positionCount - 1].GetComponent<Rigidbody2D>();
+        FixedJoint2D joint = _vineTip.GetComponent<FixedJoint2D>();
+        joint.connectedBody = _bones[_lineRenderer.positionCount - 1].GetComponent<Rigidbody2D>();
+    }
+
+    void DeleteVineTip()
+    {
+        if (_vineTip == null)
+            return;
+
+        DestroyImmediate(_vineTip);
     }
 }
