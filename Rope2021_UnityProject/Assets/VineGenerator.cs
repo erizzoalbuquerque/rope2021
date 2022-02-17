@@ -15,9 +15,8 @@ public class VineGenerator : MonoBehaviour
     [SerializeField] GameObject _vineTipPrefab;
      
     private LineRenderer _lineRenderer;
-
-    public  List<GameObject> _bones;
-    public  GameObject _vineTip;
+    [ReadOnly,SerializeField]   private List<GameObject> _bones;
+    [ReadOnly, SerializeField] private GameObject _vineTip;
 
     private float _lastVineSize = 1f;
 
