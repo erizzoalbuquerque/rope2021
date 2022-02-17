@@ -32,15 +32,18 @@ public class CameraController: MonoBehaviour
         transform.parent = null;
 
 		cameraComponent = GetComponent<Camera> ();
-		startSize = cameraComponent.orthographicSize;
+		startSize = target.position.z;
 		currentTargetSize = startSize;
     }
 
 
 	public void ChangeCameraSize(float newSize)
 	{		
-		cameraComponent.orthographicSize =  Mathf.SmoothDamp (cameraComponent.orthographicSize, newSize, ref sizeChangeRate, cameraChangeTime);
-	}
+		//cameraComponent.orthographicSize =  Mathf.SmoothDamp (cameraComponent.orthographicSize, newSize, ref sizeChangeRate, cameraChangeTime);
+
+        float targetZ = Mathf.SmoothDamp(target.position.z, newSize, ref sizeChangeRate, cameraChangeTime);
+        target.position = new Vector3(target.position.x, target.position.y, targetZ);
+    }
 
     // Update is called once per frame
     private void FixedUpdate()
@@ -50,6 +53,8 @@ public class CameraController: MonoBehaviour
 
 	void Update()
 	{
+        currentTargetSize += Input.mouseScrollDelta.y;
+
 		ChangeCameraSize (currentTargetSize);
 	}
 

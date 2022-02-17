@@ -37,15 +37,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_7f4676ec344942ffa219f4f5d9511ebc: -10
-    - Vector1_c8accb6d4e814afb9c4628522338a8f4: 70
+    - Vector1_7f4676ec344942ffa219f4f5d9511ebc: -20
+    - Vector1_c8accb6d4e814afb9c4628522338a8f4: 120
     - _InvFade: 0.25
     m_Colors:
-    - Color_c1e63080236d494487a21b33d84deff1: {r: 0.8773585, g: 0.8773585, b: 0.8773585,
+    - Color_c1e63080236d494487a21b33d84deff1: {r: 0.4528302, g: 0.4528302, b: 0.4528302,
         a: 1}
     - Color_e3d895a60c304f4fa218e47507266db5: {r: 0.14631541, g: 0.14631541, b: 0.2264151,
         a: 1}
-    - Color_ff8fe6ab46a94cc9aeeac9066fd6646a: {r: 0.67090076, g: 0.8018868, b: 0.59385014,
+    - Color_ff8fe6ab46a94cc9aeeac9066fd6646a: {r: 0.57416254, g: 0.6603774, b: 0.53889287,
         a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 0.8, g: 0.78292626, b: 0.68235296, a: 0.03529412}
