@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GrassWithWind
-  m_Shader: {fileID: -6465566751694194690, guid: 97d802d654b05534ba5148ce2fd10567,
+  m_Name: SpriteLit_Wind
+  m_Shader: {fileID: -6465566751694194690, guid: e59214e975eb17144ad214e5a8b9e83b,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,8 +20,24 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveMask:
+        m_Texture: {fileID: 2800000, guid: 0e0208c6d03475b4f9576a743907121a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -37,13 +53,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Boolean_68b8c214cb4c4795a7e746d6318853ca: 0
-    - Vector1_5b04b02d44374a2e90a8d2bcdace865e: 0.2
-    - Vector1_c08ad5bb33bf4bd7b165f9bed2993947: 0
-    - Vector1_e2549f4a66024816aedb5088b28e2687: 0.14
+    - Vector1_2610C5B5: 4
+    - Vector1_3344049B: 0.1
+    - _EnableExternalAlpha: 0
     m_Colors:
-    - Vector2_8ce0cf395d4341b5af11acbb8b385810: {r: 0, g: 0.18, b: 0, a: 0}
-    - Vector2_b2b4fd9d650b44c580183f57bbe3380c: {r: 0, g: 1.55, b: 0, a: 0}
-    - Vector2_e06bd598e1be479c9e30e0a8d20cb189: {r: 6.85, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_479ec279803d40578c3c76b5a013d63f: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_59C02B5F: {r: 0.49, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
