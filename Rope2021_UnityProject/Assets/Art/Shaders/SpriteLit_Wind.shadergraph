@@ -660,7 +660,7 @@
     },
     "m_Name": "Bending (x,y)",
     "m_DefaultReferenceName": "Vector2_479ec279803d40578c3c76b5a013d63f",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_Bending",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
