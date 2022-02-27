@@ -51,6 +51,9 @@ TagManager:
   - name: Mid_back
     uniqueID: 1234127261
     locked: 0
+  - name: Player
+    uniqueID: 3973024813
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
