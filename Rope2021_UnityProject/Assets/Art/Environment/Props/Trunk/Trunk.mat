@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SpriteLit_Trunk
+  m_Name: Trunk
   m_Shader: {fileID: -6465566751694194690, guid: e59214e975eb17144ad214e5a8b9e83b,
     type: 3}
   m_ShaderKeywords: 
