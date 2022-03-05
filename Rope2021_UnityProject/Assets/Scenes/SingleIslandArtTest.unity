@@ -1352,7 +1352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &146970083
 GameObject:
@@ -1847,36 +1847,6 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: -13.955417, y: 1.3624318, z: 0}
     m_Extent: {x: 9.311528, y: 2.9570143, z: 0}
---- !u!1 &289474112
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 289474113}
-  m_Layer: 0
-  m_Name: FallenTree (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &289474113
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289474112}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &299185233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2662,7 +2632,7 @@ Transform:
   - {fileID: 132701900}
   - {fileID: 572441332}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &367248853 stripped
 Transform:
@@ -8321,7 +8291,7 @@ Transform:
   - {fileID: 1554442427}
   - {fileID: 1466204454}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804807549
 GameObject:
@@ -10065,7 +10035,7 @@ PrefabInstance:
     - target: {fileID: 5113629205853987982, guid: 2e2573ded4ab60944aa44406989c063e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 5113629205853987982, guid: 2e2573ded4ab60944aa44406989c063e,
         type: 3}
