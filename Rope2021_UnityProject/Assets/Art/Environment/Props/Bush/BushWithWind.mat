@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WaveMask:
-        m_Texture: {fileID: 2800000, guid: d2fbfdb945552e74bb99d56da127506a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6ad51c932fec6054cb85c5ad4448e567, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -58,7 +58,7 @@ Material:
     - _EnableExternalAlpha: 0
     m_Colors:
     - Vector2_479ec279803d40578c3c76b5a013d63f: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_59C02B5F: {r: 0.76, g: 0, b: 0, a: 0}
+    - Vector2_59C02B5F: {r: 1.28, g: 0, b: 0, a: 0}
     - _Bending: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}

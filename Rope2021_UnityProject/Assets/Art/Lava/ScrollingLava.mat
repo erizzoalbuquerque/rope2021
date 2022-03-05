@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ScrollingLava
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CONTRAST_ON DISTORT_ON INNEROUTLINE_ON TEXTURESCROLL_ON WAVEUV_ON
+  m_ShaderKeywords: CONTRAST_ON DISTORT_ON GLOWTEX_ON GLOW_ON INNEROUTLINE_ON TEXTURESCROLL_ON
+    WAVEUV_ON _GLOWTEXUSED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -114,7 +115,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 0.1
-    - _GlowTexUsed: 0
+    - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
     - _GradBoostY: 1.2
