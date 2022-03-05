@@ -39,22 +39,28 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Sky
-    uniqueID: 3451935199
-    locked: 0
   - name: Background
     uniqueID: 2919636589
     locked: 0
-  - name: Wall
+  - name: Midground_Back
+    uniqueID: 1234127261
+    locked: 0
+  - name: Cave_Back
     uniqueID: 1287362503
     locked: 0
-  - name: Mid_back
-    uniqueID: 1234127261
+  - name: Cave_Mid
+    uniqueID: 1512632315
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Mid_Fore
+  - name: Cave_Fore
+    uniqueID: 1907385289
+    locked: 0
+  - name: Midground
+    uniqueID: 3973024813
+    locked: 0
+  - name: Midground_Fore
     uniqueID: 480358559
     locked: 0
   - name: Foreground

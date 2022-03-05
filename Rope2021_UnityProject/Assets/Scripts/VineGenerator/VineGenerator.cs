@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Automatizes the creation of a Vine of variable size. Should be used with the pre configured prefab.
 /// 
-/// TODO: Separte this class in Generator and Updator
+/// TODO: Separte this class in Generator and Updater
 /// </summary>
 [ExecuteInEditMode]
 public class VineGenerator : MonoBehaviour
@@ -15,7 +15,7 @@ public class VineGenerator : MonoBehaviour
 
     [SerializeField] GameObject _vineBonePrefab;
     [SerializeField] GameObject _vineTipPrefab;
-     
+
     private LineRenderer _lineRenderer;
     [ReadOnly,SerializeField]   private List<GameObject> _bones;
     [ReadOnly, SerializeField] private GameObject _vineTip;
@@ -109,7 +109,7 @@ public class VineGenerator : MonoBehaviour
             }
         }
 
-        print("Created new bones to vine:" + this.gameObject.name);
+        //print("Created new bones to vine:" + this.gameObject.name);
     }
 
     void DeleteBones()
@@ -164,13 +164,31 @@ public class VineGenerator : MonoBehaviour
         _vineTip = null;
     }
 
-    [ContextMenu("Clean")]
-    void Clean()
+    /// <summary>
+    /// Delete any child of this game object and generate the vine again. Also, update references.
+    /// </summary>
+    [ContextMenu("Repair")]
+    void Reapair()
     {
+        _lineRenderer = GetComponent<LineRenderer>();
+
         DeleteBones();
         DeleteVineTip();
 
+        List<Transform> children = new List<Transform>();
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            children.Add(this.transform.GetChild(i));
+        }
+
+        foreach (Transform c in children)
+        {
+            DestroyImmediate(c.gameObject);
+        }
+
         _lineRenderer.positionCount = 2;
         _lineRenderer.SetPosition(1, Vector2.down);
+
+        GenerateVine();
     }
 }

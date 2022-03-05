@@ -96,8 +96,8 @@ Material:
     - _ColorSwapBlueLuminosity: 0.5
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
-    - _Contrast: 1
-    - _DistortAmount: 0.5
+    - _Contrast: 0.98
+    - _DistortAmount: 2
     - _DistortTexXSpeed: 0.1
     - _DistortTexYSpeed: 0.1
     - _FadeAmount: -0.1
@@ -198,7 +198,7 @@ Material:
     - _TwistUvPosX: 0.5
     - _TwistUvPosY: 0.5
     - _TwistUvRadius: 0.75
-    - _WaveAmount: 7
+    - _WaveAmount: 0
     - _WaveSpeed: 1.8
     - _WaveStrength: 7.5
     - _WaveX: 0
