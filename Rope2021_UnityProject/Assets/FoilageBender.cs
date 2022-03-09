@@ -29,6 +29,12 @@ public class FoilageBender : MonoBehaviour
         seq.Append(DOTween.To(() => _material.GetVector("_Bending"), x => _material.SetVector("_Bending", x), bending, _duration/4f).SetEase(Ease.OutSine));
         seq.Append(DOTween.To(() => _material.GetVector("_Bending"), x => _material.SetVector("_Bending", x), Vector4.zero, _duration).SetEase(Ease.OutElastic));
         seq.Play();
+        seq.OnComplete(ResetMaterial);
+    }
+
+    void ResetMaterial()
+    {
+        print("ResetMaterial()");
     }
 
     [ContextMenu("Bend")]
