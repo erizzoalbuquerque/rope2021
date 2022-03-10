@@ -27,9 +27,9 @@ public class VineGenerator : MonoBehaviour
 
     void Start()
     {
-        //Any modification on this Prefab shouldn't be saved, so we unpack it.
-        if (UnityEditor.PrefabUtility.IsPartOfAnyPrefab(this.gameObject)) 
-            UnityEditor.PrefabUtility.UnpackPrefabInstance(this.gameObject, UnityEditor.PrefabUnpackMode.Completely, UnityEditor.InteractionMode.AutomatedAction);       
+        ////Any modification on this Prefab shouldn't be saved, so we unpack it.
+        //if (UnityEditor.PrefabUtility.IsPartOfAnyPrefab(this.gameObject)) 
+        //    UnityEditor.PrefabUtility.UnpackPrefabInstance(this.gameObject, UnityEditor.PrefabUnpackMode.Completely, UnityEditor.InteractionMode.AutomatedAction);       
 
         _lineRenderer = GetComponent<LineRenderer>();
         _lastVineSize = _vineSize;
