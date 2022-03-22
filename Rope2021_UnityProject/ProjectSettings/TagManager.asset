@@ -20,7 +20,7 @@ TagManager:
   - Checkpoint
   - BlobShadow
   - Lava
-  - 
+  - Interactable
   - 
   - 
   - 
@@ -39,6 +39,30 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2919636589
+    locked: 0
+  - name: Midground_Back
+    uniqueID: 1234127261
+    locked: 0
+  - name: Cave_Back
+    uniqueID: 1287362503
+    locked: 0
+  - name: Cave_Mid
+    uniqueID: 1512632315
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Cave_Fore
+    uniqueID: 1907385289
+    locked: 0
+  - name: Midground
+    uniqueID: 3973024813
+    locked: 0
+  - name: Midground_Fore
+    uniqueID: 480358559
+    locked: 0
+  - name: Foreground
+    uniqueID: 1454166907
     locked: 0

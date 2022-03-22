@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
+  m_Name: RockIsland
+  m_EditorClassIdentifier: 
+  m_Angles:
+  - m_Start: -45
+    m_End: 45
+    m_Order: 0
+    m_Sprites:
+    - {fileID: 2343993471746999386, guid: 3918df272b25d6d42acb7871c1587667, type: 3}
+    - {fileID: 1635050835151462526, guid: 7c3d431afe65f7648837a561d139c397, type: 3}
+    - {fileID: -5519790128936537583, guid: 7c3d431afe65f7648837a561d139c397, type: 3}
+    - {fileID: 21300000, guid: 0061baec105938b4b85ecd3910b37711, type: 3}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 41b5b87a401eda045ae2599ac5e64f58, type: 3}
+    - {fileID: 21300000, guid: 9349ca672e86db441a15005e59577fb3, type: 3}
+    - {fileID: 21300000, guid: 70d2faa17bf8a0d44afe9b760379d509, type: 3}
+    - {fileID: 21300000, guid: 7db89f60b512fc1418d2f6756282e4fb, type: 3}
+    - {fileID: 21300000, guid: fd4ddbea7418626478c5e333c75f5976, type: 3}
+  - m_Start: 45
+    m_End: 315
+    m_Order: 0
+    m_Sprites:
+    - {fileID: 2343993471746999386, guid: 3918df272b25d6d42acb7871c1587667, type: 3}
+    - {fileID: 21300000, guid: 41b5b87a401eda045ae2599ac5e64f58, type: 3}
+    - {fileID: 21300000, guid: 70d2faa17bf8a0d44afe9b760379d509, type: 3}
+    - {fileID: 21300000, guid: 7db89f60b512fc1418d2f6756282e4fb, type: 3}
+    - {fileID: 21300000, guid: fd4ddbea7418626478c5e333c75f5976, type: 3}
+  m_FillTexture: {fileID: 2800000, guid: 2449f14228afe6b4aabd46613fb0a241, type: 3}
+  m_CornerSprites:
+  - m_CornerType: 0
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 1
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 2
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 3
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 4
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 5
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 6
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 7
+    m_Sprites:
+    - {fileID: 0}
+  m_FillOffset: 0.03
+  m_UseSpriteBorders: 0
