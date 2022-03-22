@@ -296,9 +296,9 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.93
   m_Color: {r: 1, g: 0.36320752, b: 0.852188, a: 1}
-  m_Intensity: 1.32
+  m_Intensity: 2.33
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 9d498f49c797bb4c2d8ccfecfbef285a
+  m_ApplyToSortingLayers: c797bb4c
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
+  m_PointLightInnerRadius: 1.228514
   m_PointLightOuterRadius: 7.54
   m_PointLightDistance: 3
   m_PointLightQuality: 1
@@ -346,7 +346,7 @@ Transform:
   m_GameObject: {fileID: 5113629205853987983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.7, y: -2.67, z: 0}
-  m_LocalScale: {x: 0.5052762, y: 0.5052762, z: 0.5052762}
+  m_LocalScale: {x: 0.20273489, y: 0.2027349, z: 0.20273489}
   m_Children:
   - {fileID: 5113629204217801473}
   - {fileID: 5113629205939950247}
