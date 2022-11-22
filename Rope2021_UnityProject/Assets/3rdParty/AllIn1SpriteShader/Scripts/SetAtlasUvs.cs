@@ -10,12 +10,17 @@ namespace AllIn1SpriteShader
     public class SetAtlasUvs : MonoBehaviour
     {
         [SerializeField] private bool updateEveryFrame = false;
+        [Tooltip("If using a Sprite Renderer it will use the material property instead of sharedMaterial"), SerializeField] private bool useMaterialInstanceIfPossible = false;
         private Renderer render;
         private SpriteRenderer spriteRender;
         private Image uiImage;
         private bool isUI = false;
+        private readonly int minXuv = Shader.PropertyToID("_MinXUV");
+        private readonly int maxXuv = Shader.PropertyToID("_MaxXUV");
+        private readonly int minYuv = Shader.PropertyToID("_MinYUV");
+        private readonly int maxYuv = Shader.PropertyToID("_MaxYUV");
 
-        void Start()
+        private void Start()
         {
             Setup();
         }
@@ -31,7 +36,7 @@ namespace AllIn1SpriteShader
             if (!updateEveryFrame && Application.isPlaying && this != null) this.enabled = false;
         }
 
-        void OnWillRenderObject()
+        private void OnWillRenderObject()
         {
             if (updateEveryFrame)
             {
@@ -45,16 +50,27 @@ namespace AllIn1SpriteShader
 
             if (!isUI)
             {
-                Rect r = spriteRender.sprite.textureRect;
-                r.x /= spriteRender.sprite.texture.width;
-                r.width /= spriteRender.sprite.texture.width;
-                r.y /= spriteRender.sprite.texture.height;
-                r.height /= spriteRender.sprite.texture.height;
+                Sprite sprite = spriteRender.sprite;
+                Rect r = sprite.textureRect;
+                r.x /= sprite.texture.width;
+                r.width /= sprite.texture.width;
+                r.y /= sprite.texture.height;
+                r.height /= sprite.texture.height;
 
-                render.sharedMaterial.SetFloat("_MinXUV", r.xMin);
-                render.sharedMaterial.SetFloat("_MaxXUV", r.xMax);
-                render.sharedMaterial.SetFloat("_MinYUV", r.yMin);
-                render.sharedMaterial.SetFloat("_MaxYUV", r.yMax);
+                if(useMaterialInstanceIfPossible && Application.isPlaying)
+                {
+                    render.material.SetFloat(minXuv, r.xMin);
+                    render.material.SetFloat(maxXuv, r.xMax);
+                    render.material.SetFloat(minYuv, r.yMin);
+                    render.material.SetFloat(maxYuv, r.yMax);   
+                }
+                else
+                {
+                    render.sharedMaterial.SetFloat(minXuv, r.xMin);
+                    render.sharedMaterial.SetFloat(maxXuv, r.xMax);
+                    render.sharedMaterial.SetFloat(minYuv, r.yMin);
+                    render.sharedMaterial.SetFloat(maxYuv, r.yMax);   
+                }
             }
             else
             {
@@ -64,10 +80,10 @@ namespace AllIn1SpriteShader
                 r.y /= uiImage.sprite.texture.height;
                 r.height /= uiImage.sprite.texture.height;
 
-                uiImage.material.SetFloat("_MinXUV", r.xMin);
-                uiImage.material.SetFloat("_MaxXUV", r.xMax);
-                uiImage.material.SetFloat("_MinYUV", r.yMin);
-                uiImage.material.SetFloat("_MaxYUV", r.yMax);
+                uiImage.material.SetFloat(minXuv, r.xMin);
+                uiImage.material.SetFloat(maxXuv, r.xMax);
+                uiImage.material.SetFloat(minYuv, r.yMin);
+                uiImage.material.SetFloat(maxYuv, r.yMax);
             }
         }
 
@@ -77,17 +93,27 @@ namespace AllIn1SpriteShader
 
             if (!isUI)
             {
-                render.sharedMaterial.SetFloat("_MinXUV", 0f);
-                render.sharedMaterial.SetFloat("_MaxXUV", 1f);
-                render.sharedMaterial.SetFloat("_MinYUV", 0f);
-                render.sharedMaterial.SetFloat("_MaxYUV", 1f);
+                if(useMaterialInstanceIfPossible && Application.isPlaying)
+                {
+                    render.material.SetFloat(minXuv, 0f);
+                    render.material.SetFloat(maxXuv, 1f);
+                    render.material.SetFloat(minYuv, 0f);
+                    render.material.SetFloat(maxYuv, 1f);
+                }
+                else
+                {
+                    render.sharedMaterial.SetFloat(minXuv, 0f);
+                    render.sharedMaterial.SetFloat(maxXuv, 1f);
+                    render.sharedMaterial.SetFloat(minYuv, 0f);
+                    render.sharedMaterial.SetFloat(maxYuv, 1f);   
+                }
             }
             else
             {
-                uiImage.material.SetFloat("_MinXUV", 0f);
-                uiImage.material.SetFloat("_MaxXUV", 1f);
-                uiImage.material.SetFloat("_MinYUV", 0f);
-                uiImage.material.SetFloat("_MaxYUV", 1f);
+                uiImage.material.SetFloat(minXuv, 0f);
+                uiImage.material.SetFloat(maxXuv, 1f);
+                uiImage.material.SetFloat(minYuv, 0f);
+                uiImage.material.SetFloat(maxYuv, 1f);
             }
         }
 
@@ -127,8 +153,7 @@ namespace AllIn1SpriteShader
                     else
                     {
                         #if UNITY_EDITOR
-                        EditorUtility.DisplayDialog("No Valid Renderer Component Found", "Looks like you have no Sprite Renderer or UI Image on: '"
-                            + gameObject.name + "'\n This SetAtlasUV component will now get destroyed", "Ok");
+                        EditorUtility.DisplayDialog("No Renderer or UI Graphic found", "This SetAtlasUV component will now get destroyed", "Ok");
                         #endif
                         DestroyImmediate(this);
                         return false;
@@ -141,9 +166,7 @@ namespace AllIn1SpriteShader
             if (spriteRender == null && uiImage == null)
             {
                 #if UNITY_EDITOR
-                EditorUtility.DisplayDialog("No Sprite Renderer", "Looks like you are missing a Sprite Renderer on: '"
-                    + gameObject.name + "'\n SetAtlasUvs only works with Sprite Renderers since it needs a 'sharedMaterial' property that UI images lack." +
-                    " This SetAtlasUV component will now get destroyed", "Ok");
+                EditorUtility.DisplayDialog("No Renderer or UI Graphic found", "This SetAtlasUV component will now get destroyed", "Ok");
                 #endif
                 DestroyImmediate(this);
                 return false;

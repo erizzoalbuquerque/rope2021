@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 using System.Linq;
 
 [CanEditMultipleObjects]
-public class AllIn1SpriteShader : ShaderGUI
+public class AllIn1SpriteShaderEditor : ShaderGUI
 {
     private Material targetMat;
     private BlendMode srcMode, dstMode;

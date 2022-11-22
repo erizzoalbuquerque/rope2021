@@ -48,7 +48,7 @@ namespace AllIn1SpriteShader
             currentTarget += offset;
             if (currentTarget > items.Length - 1) currentTarget = 0;
             else if (currentTarget < 0) currentTarget = items.Length - 1;
-            dummyRotation *= Quaternion.Euler(Vector3.up * offset * offsetRotation);
+            dummyRotation *= Quaternion.Euler(Vector3.up * (offset * offsetRotation));
         }
     }
 }

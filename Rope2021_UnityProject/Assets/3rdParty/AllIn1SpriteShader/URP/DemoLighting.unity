@@ -1299,9 +1299,11 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
+    - _EditorDrawers: 14
     - _FadeAmount: -0.1
     - _FadeBurnGlow: 2
     - _FadeBurnTransition: 0.075
@@ -1317,6 +1319,7 @@ Material:
     - _GlitchSize: 1
     - _Glow: 10
     - _GlowAffectLight: 1
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -2420,9 +2423,11 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.683
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
+    - _EditorDrawers: 14
     - _FadeAmount: -0.1
     - _FadeBurnGlow: 2
     - _FadeBurnTransition: 0.075
@@ -2438,6 +2443,7 @@ Material:
     - _GlitchSize: 1
     - _Glow: 1
     - _GlowAffectLight: 1
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -3082,7 +3088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &408718893
@@ -3172,7 +3178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &433121284
@@ -3750,7 +3756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &561413335
@@ -3848,7 +3854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &585424288
@@ -4619,7 +4625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &706688845
@@ -4801,7 +4807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &729722144
@@ -5051,7 +5057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!1 &746533295
@@ -5680,7 +5686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &856929820
@@ -5875,7 +5881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &887356090
@@ -5974,7 +5980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &896597379
@@ -6160,9 +6166,11 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
+    - _EditorDrawers: 6
     - _FadeAmount: -0.1
     - _FadeBurnGlow: 2
     - _FadeBurnTransition: 0.075
@@ -6177,6 +6185,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -6697,7 +6706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &988158261
@@ -7477,7 +7486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1101219913
@@ -7575,7 +7584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1104675099
@@ -10249,7 +10258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1529619421
@@ -10491,7 +10500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1563852634
@@ -11458,7 +11467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 3
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1811366699
@@ -12101,7 +12110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1870637972
@@ -14030,9 +14039,11 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
+    - _EditorDrawers: 14
     - _FadeAmount: -0.1
     - _FadeBurnGlow: 2
     - _FadeBurnTransition: 0.075
@@ -14048,6 +14059,7 @@ Material:
     - _GlitchSize: 1
     - _Glow: 7
     - _GlowAffectLight: 1
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2

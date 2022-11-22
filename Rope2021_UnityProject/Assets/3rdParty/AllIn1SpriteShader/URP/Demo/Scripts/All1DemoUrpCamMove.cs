@@ -10,12 +10,12 @@ namespace AllIn1SpriteShader
         private Vector2 input = Vector3.zero;
         private Rigidbody2D rb;
 
-        void Start()
+        public void Start()
         {
             rb = GetComponent<Rigidbody2D>();
         }
 
-        void FixedUpdate()
+        public void FixedUpdate()
         {
             input.x = Input.GetAxis("Horizontal");
             input.y = Input.GetAxis("Vertical");

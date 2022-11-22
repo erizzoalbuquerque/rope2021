@@ -209,6 +209,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -226,6 +227,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -490,7 +492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &42135252
@@ -693,7 +695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &47460686
@@ -805,7 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &55667224
@@ -916,7 +918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &56751285
@@ -1168,6 +1170,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -1185,6 +1188,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -1406,6 +1410,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -1423,6 +1428,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -1645,6 +1651,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -1662,6 +1669,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -1881,6 +1889,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -1898,6 +1907,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -2119,6 +2129,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -2136,6 +2147,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -2588,6 +2600,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.09
     - _ColorSwapRedLuminosity: 0.604
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -2605,6 +2618,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -2827,6 +2841,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -2844,6 +2859,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 0.858
     - _GradBoostX: 1.2
@@ -3521,6 +3537,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -3538,6 +3555,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -3850,6 +3868,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -3867,6 +3886,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -4576,6 +4596,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -4593,6 +4614,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -4815,6 +4837,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -4832,6 +4855,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -5054,6 +5078,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -5071,6 +5096,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -5293,6 +5319,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -5310,6 +5337,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -5530,6 +5558,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.28
     - _ColorSwapRedLuminosity: 0.481
     - _Contrast: 3.29
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -5547,6 +5576,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 0
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -5942,7 +5972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &252177638
@@ -6050,7 +6080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &266318150
@@ -6146,7 +6176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &269805656
@@ -6386,6 +6416,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.264
     - _ColorSwapRedLuminosity: 0.75
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -6403,6 +6434,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 2.5
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -6576,7 +6608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &290590335
@@ -7100,6 +7132,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -7117,6 +7150,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -7381,7 +7415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &312669280
@@ -7542,6 +7576,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -7559,6 +7594,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -8145,6 +8181,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -8162,6 +8199,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -8331,7 +8369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &326244157
@@ -8480,6 +8518,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.81
     - _DistortTexXSpeed: -1
     - _DistortTexYSpeed: -5.9
@@ -8497,6 +8536,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 7.7
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -8847,7 +8887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &353408741
@@ -9071,7 +9111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &356332868
@@ -9157,7 +9197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &357954211
@@ -9268,7 +9308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &361311997
@@ -9470,7 +9510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &368348658
@@ -9854,7 +9894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &407134452
@@ -10134,7 +10174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &419407229
@@ -10336,7 +10376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &420059983
@@ -10587,6 +10627,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -10604,6 +10645,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -10768,7 +10810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &435111028
@@ -11049,7 +11091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &443772013
@@ -11173,7 +11215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &450696187
@@ -11334,6 +11376,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -11351,6 +11394,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -11661,6 +11705,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -11678,6 +11723,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 0.876
     - _GradBoostX: 0.98
@@ -11900,6 +11946,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -11917,6 +11964,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 3.3
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -12090,7 +12138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &471382086
@@ -17066,7 +17114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &485976058
@@ -17360,7 +17408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &499272006
@@ -17704,7 +17752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &511167264
@@ -18131,6 +18179,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -18148,6 +18197,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -18431,7 +18481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &540070586
@@ -18579,6 +18629,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 2
     - _DistortTexYSpeed: 2
@@ -18596,6 +18647,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 4.4
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -18874,7 +18926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &548255503
@@ -19409,6 +19461,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -19426,6 +19479,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -19597,7 +19651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &582549650
@@ -19804,7 +19858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &584220656
@@ -19915,7 +19969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &586081881
@@ -20254,7 +20308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &597182740
@@ -20688,6 +20742,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -20705,6 +20760,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -21021,6 +21077,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -21038,6 +21095,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 3.3
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -21508,6 +21566,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -21525,6 +21584,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -21746,6 +21806,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -21763,6 +21824,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -22045,7 +22107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &671117229
@@ -22153,7 +22215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &682244419
@@ -22446,7 +22508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &694591673
@@ -22946,6 +23008,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -22963,6 +23026,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -23192,7 +23256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &746759205
@@ -23465,6 +23529,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.28
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.2
     - _DistortTexXSpeed: 1
     - _DistortTexYSpeed: 1
@@ -23482,6 +23547,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 14.3
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -23669,7 +23735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &766050011
@@ -23829,6 +23895,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -23846,6 +23913,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -24016,7 +24084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &778370418
@@ -24115,7 +24183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &786925993
@@ -24587,7 +24655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &798901406
@@ -24684,7 +24752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &799318218
@@ -24849,6 +24917,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -24866,6 +24935,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -25179,6 +25249,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -25196,6 +25267,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -25368,7 +25440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &831340860
@@ -26273,6 +26345,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.128
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -26290,6 +26363,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 6.1
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -26968,6 +27042,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -26985,6 +27060,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -27740,7 +27816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &944684575
@@ -28010,6 +28086,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 5.27
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -28027,6 +28104,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -28289,6 +28367,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -28306,6 +28385,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -28479,7 +28559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &972134373
@@ -28591,7 +28671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &982048498
@@ -28702,7 +28782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &984096430
@@ -28862,6 +28942,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.09
     - _ColorSwapRedLuminosity: 0.604
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -28879,6 +28960,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -29101,6 +29183,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -29118,6 +29201,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -29624,7 +29708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1023365942
@@ -29772,6 +29856,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -29789,6 +29874,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 6.3
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -29962,7 +30048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1028271465
@@ -30074,7 +30160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1038353161
@@ -30344,6 +30430,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -30361,6 +30448,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -30584,6 +30672,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.28
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1.44
+    - _CullingOption: 0
     - _DistortAmount: 0.2
     - _DistortTexXSpeed: 1
     - _DistortTexYSpeed: 1
@@ -30601,6 +30690,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 0
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -30788,7 +30878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1050471979
@@ -30948,6 +31038,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -30965,6 +31056,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 0.5
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -31228,7 +31320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1073566158
@@ -31339,7 +31431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1073973765
@@ -31500,6 +31592,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -31517,6 +31610,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -32279,6 +32373,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -32296,6 +32391,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -32469,7 +32565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1111461199
@@ -32578,7 +32674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1113550347
@@ -32809,7 +32905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1119325825
@@ -32920,7 +33016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1120052625
@@ -33028,7 +33124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1120672007
@@ -33127,7 +33223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1123731225
@@ -33288,6 +33384,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -33305,6 +33402,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -33618,6 +33716,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -33635,6 +33734,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -33857,6 +33957,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -33874,6 +33975,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -34095,6 +34197,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -34112,6 +34215,7 @@ Material:
     - _GlitchAmount: 4.1
     - _GlitchSize: 0.74
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -34282,7 +34386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1183578092
@@ -34613,6 +34717,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 1.167
     - _DistortTexXSpeed: 10
     - _DistortTexYSpeed: 10
@@ -34630,6 +34735,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 1.5
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -34853,6 +34959,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.81
     - _DistortTexXSpeed: -1
     - _DistortTexYSpeed: -5.9
@@ -34870,6 +34977,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 14.3
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -35132,6 +35240,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -35149,6 +35258,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -35322,7 +35432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1227823623
@@ -35433,7 +35543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1229041068
@@ -35593,6 +35703,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -35610,6 +35721,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 0.858
     - _GradBoostX: 1.2
@@ -35923,6 +36035,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -35940,6 +36053,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 0
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -36345,6 +36459,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -36362,6 +36477,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 0.8
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 0.411
     - _GradBoostX: 1.2
@@ -36534,7 +36650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1286689245
@@ -36899,7 +37015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1313138822
@@ -37059,6 +37175,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -37076,6 +37193,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 7.5
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -37431,7 +37549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1329663902
@@ -37591,6 +37709,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.34
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -37608,6 +37727,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -37831,6 +37951,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.933
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -37848,6 +37969,7 @@ Material:
     - _GlitchAmount: 1.58
     - _GlitchSize: 1
     - _Glow: 18.4
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 0.193
     - _GradBoostX: 1.2
@@ -38020,7 +38142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1350115733
@@ -38529,6 +38651,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -38546,6 +38669,7 @@ Material:
     - _GlitchAmount: 6
     - _GlitchSize: 1.22
     - _Glow: 5.2
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -38719,7 +38843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1374997142
@@ -38879,6 +39003,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -38896,6 +39021,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -39119,6 +39245,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -39136,6 +39263,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -39306,7 +39434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1402107648
@@ -39729,7 +39857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1434614530
@@ -39889,6 +40017,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -39906,6 +40035,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -40216,6 +40346,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -40233,6 +40364,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -40400,7 +40532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1447921191
@@ -40602,7 +40734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1454273604
@@ -40768,6 +40900,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -40785,6 +40918,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -41323,7 +41457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1478122373
@@ -41635,7 +41769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1507269765
@@ -41925,7 +42059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1521478962
@@ -42297,7 +42431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1528149041
@@ -42457,6 +42591,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -42474,6 +42609,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 14.9
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -42647,7 +42783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1554650443
@@ -43269,6 +43405,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -43286,6 +43423,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -43460,7 +43598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1613686744
@@ -43769,7 +43907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1673476645
@@ -43868,7 +44006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1675838111
@@ -44090,7 +44228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1687594939
@@ -44198,7 +44336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1688633196
@@ -44346,6 +44484,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 6
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -44363,6 +44502,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -44852,6 +44992,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -44869,6 +45010,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -45106,7 +45248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1724918726
@@ -45527,6 +45669,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -45544,6 +45687,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 0
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -45900,7 +46044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1756331352
@@ -46012,7 +46156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1767383826
@@ -46192,6 +46336,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.93
     - _DistortTexXSpeed: -1
     - _DistortTexYSpeed: -11.6
@@ -46209,6 +46354,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -46425,6 +46571,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -46442,6 +46589,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -46615,7 +46763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1778749806
@@ -46723,7 +46871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1797106728
@@ -46913,7 +47061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1813870146
@@ -47074,6 +47222,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -47091,6 +47240,7 @@ Material:
     - _GlitchAmount: 7.4
     - _GlitchSize: 2.57
     - _Glow: 3.9
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -47255,7 +47405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1818617672
@@ -47403,6 +47553,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -47420,6 +47571,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -48098,7 +48250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1861014116
@@ -48277,6 +48429,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -48294,6 +48447,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -48669,7 +48823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1875180454
@@ -53943,7 +54097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1893925005
@@ -54074,7 +54228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1901854653
@@ -54235,6 +54389,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -54252,6 +54407,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 0
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -54423,7 +54579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1916465498
@@ -54534,7 +54690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1923390776
@@ -54688,7 +54844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1931308737
@@ -54800,7 +54956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1934762266
@@ -54979,6 +55135,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -54996,6 +55153,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -55610,6 +55768,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -55627,6 +55786,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 5.3
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.3
@@ -55843,6 +56003,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -55860,6 +56021,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -56053,7 +56215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &1986728945
@@ -56164,7 +56326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &1988936580
@@ -56415,6 +56577,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -56432,6 +56595,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -56924,6 +57088,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.163
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -56941,6 +57106,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 4.1
+    - _GlowGlobal: 1
     - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -57109,7 +57275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &2035943846
@@ -57312,7 +57478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &2045252514
@@ -57492,6 +57658,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -57509,6 +57676,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 1.2
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 0.465
     - _GradBoostX: 1.2
@@ -57731,6 +57899,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -57748,6 +57917,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -58152,6 +58322,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.2
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -58169,6 +58340,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -58391,6 +58563,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -58408,6 +58581,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -58630,6 +58804,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -58647,6 +58822,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -58924,7 +59100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 4
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!114 &2082220745
@@ -59146,7 +59322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &2096881079
@@ -59397,6 +59573,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.25
     - _DistortTexXSpeed: 3
     - _DistortTexYSpeed: 5
@@ -59414,6 +59591,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -59726,6 +59904,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -59743,6 +59922,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -59910,7 +60090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!212 &2134460151
@@ -60058,6 +60238,7 @@ Material:
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
     - _Contrast: 1
+    - _CullingOption: 0
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -60075,6 +60256,7 @@ Material:
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
+    - _GlowGlobal: 1
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GradBoostX: 1.2
@@ -65027,7 +65209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!1 &4005302481515300279
@@ -65206,7 +65388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderTypes: 0
-  normalStrenght: 5
+  normalStrength: 5
   normalSmoothing: 1
   computingNormal: 0
 --- !u!95 &5952972451371321219

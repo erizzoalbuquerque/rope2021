@@ -29,7 +29,7 @@ half BlurHD_G(half bhqp, half x)
 {
 	return exp(-(x * x) / (2.0 * bhqp * bhqp));
 }
-half4 BlurHD(half2 uv, sampler2D source, half Intensity)
+half4 BlurHD(half2 uv, sampler2D source, half Intensity, half xScale, half yScale)
 {
 	int iterations = 16;
 	int halfIterations = iterations / 2;
@@ -40,13 +40,13 @@ half4 BlurHD(half2 uv, sampler2D source, half Intensity)
 	for (int iy = 0; iy < iterations; ++iy)
 	{
 		half fy = BlurHD_G(sigmaY, half(iy) -half(halfIterations));
-		half offsety = half(iy - halfIterations) * 0.00390625;
+		half offsetY = half(iy - halfIterations) * 0.00390625 * xScale;
 		for (int ix = 0; ix < iterations; ++ix)
 		{
 			half fx = BlurHD_G(sigmaX, half(ix) - half(halfIterations));
-			half offsetx = half(ix - halfIterations) * 0.00390625;
+			half offsetX = half(ix - halfIterations) * 0.00390625 * yScale;
 			total += fx * fy;
-			ret += tex2D(source, uv + half2(offsetx, offsety)) * fx * fy;
+			ret += tex2D(source, uv + half2(offsetX, offsetY)) * fx * fy;
 		}
 	}
 	return ret / total;
@@ -58,6 +58,10 @@ half rand(half2 seed, half offset) {
 
 half rand2(half2 seed, half offset) {
 	return (frac(sin(dot(seed * floor(50 + (_Time % 1.0) * 12.), half2(127.1, 311.7))) * 43758.5453123) + offset) % 1.0;
+}
+
+half rand2CustomTime(half2 seed, half offset, half customTime) {
+	return (frac(sin(dot(seed * floor(50 + (customTime % 1.0) * 12.), half2(127.1, 311.7))) * 43758.5453123) + offset) % 1.0;
 }
 //-----------------------------------------------------------------------
 half RemapFloat(half inValue, half inMin, half inMax, half outMin, half outMax){
