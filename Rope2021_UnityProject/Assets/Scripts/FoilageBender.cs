@@ -9,12 +9,15 @@ public class FoilageBender : MonoBehaviour
     [SerializeField] float _duration = 1.5f;
     [SerializeField] float _maxBodySpeed = 20f;
 
-    Material _material;
+    Material _sharedMaterial;
+    Material _instanceMaterial;
+    SpriteRenderer _sr;
     bool _isBending = false;
 
     void Awake()
     {
-        _material = GetComponent<SpriteRenderer>().material;
+        _sr = GetComponent<SpriteRenderer>();
+        _sharedMaterial = _sr.sharedMaterial;
     }
 
     private void Start()
@@ -35,22 +38,28 @@ public class FoilageBender : MonoBehaviour
 
         _isBending = true;
 
+        _instanceMaterial = _sr.material;
+
         Vector4 bending = new Vector4(bendingAmount, 0f, 0f, 0f);
 
         Sequence seq = DOTween.Sequence();
-        seq.Append(DOTween.To(() => _material.GetVector("_Bending"), x => _material.SetVector("_Bending", x), bending, 0.3f).SetEase(Ease.OutSine));
-        seq.Append(DOTween.To(() => _material.GetVector("_Bending"), x => _material.SetVector("_Bending", x), Vector4.zero, _duration).SetEase(Ease.OutElastic));
+        seq.Append(DOTween.To(() => _instanceMaterial.GetVector("_Bending"), x => _instanceMaterial.SetVector("_Bending", x), bending, 0.3f).SetEase(Ease.OutSine));
+        seq.Append(DOTween.To(() => _instanceMaterial.GetVector("_Bending"), x => _instanceMaterial.SetVector("_Bending", x), Vector4.zero, _duration).SetEase(Ease.OutElastic));
         seq.Play();
         seq.OnComplete(Reset);
     }
 
     void Reset()
     {
-        //Do nothing about the material for now. Delete Instance if needed in the future.
-
+        _sr.material = _sharedMaterial;
+        _instanceMaterial = null;
         _isBending = false;
     }
 
+    void CreateNewInstanceMaterial()
+    {
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
