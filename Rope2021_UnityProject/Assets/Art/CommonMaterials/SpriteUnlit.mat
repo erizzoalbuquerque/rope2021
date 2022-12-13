@@ -7,9 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Clouds
-  m_Shader: {fileID: -6465566751694194690, guid: 5b0fe54e0d4449448bc4ae5b7ab5ed94,
-    type: 3}
+  m_Name: SpriteUnlit
+  m_Shader: {fileID: 4800000, guid: 13c02b14c4d048fa9653293d54f6e0e1, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -21,37 +20,28 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5b303ff28ad9368468a2edd759cf458d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
+    - _MaskTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
+    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_7f4676ec344942ffa219f4f5d9511ebc: -20
-    - Vector1_c8accb6d4e814afb9c4628522338a8f4: 75.32
-    - _InvFade: 0.25
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
     m_Colors:
-    - Color_c1e63080236d494487a21b33d84deff1: {r: 0.4528302, g: 0.4528302, b: 0.4528302,
-        a: 1}
-    - Color_e3d895a60c304f4fa218e47507266db5: {r: 0.14631541, g: 0.14631541, b: 0.2264151,
-        a: 1}
-    - Color_ff8fe6ab46a94cc9aeeac9066fd6646a: {r: 0.57416254, g: 0.6603774, b: 0.53889287,
-        a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _TintColor: {r: 0.8, g: 0.78292626, b: 0.68235296, a: 0.03529412}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!1002 &2100001
-EditorExtensionImpl:
-  serializedVersion: 6
